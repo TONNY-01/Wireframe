@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizers - AgroConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#2E7D32',
+                        accent: '#8BC34A',
+                        dark: '#1B5E20',
+                        light: '#F1F8E9',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-primary text-2xl font-bold">AgroConnect</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="fertilizers.html" class="text-primary px-3 py-2 text-sm font-medium border-b-2 border-primary">Fertilizers</a>
+                    <a href="market-prices.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Market Prices</a>
+                    <a href="soil-analysis.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Soil Analysis</a>
+                    <a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-secondary">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="fertilizers.html" class="block px-4 py-2 text-sm text-primary bg-gray-100">Fertilizers</a>
+            <a href="market-prices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Market Prices</a>
+            <a href="soil-analysis.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Soil Analysis</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Fertilizer Section -->
+    <section class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Our Fertilizer Products</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">High-quality fertilizers for optimal plant growth and soil health</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fertilizer Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Organic Fertilizer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Organic Compost</h3>
+                        <p class="text-gray-600 mb-4">High-quality organic compost for improved soil fertility and plant growth. Rich in nutrients and beneficial microorganisms.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$25/bag</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fertilizer Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1612773223607-af3b9e4b8a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="NPK Fertilizer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">NPK 20-20-20</h3>
+                        <p class="text-gray-600 mb-4">Balanced NPK fertilizer for all stages of plant growth. Provides essential nutrients for healthy plant development.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$30/bag</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fertilizer Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Biofertilizer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Biofertilizer Pack</h3>
+                        <p class="text-gray-600 mb-4">Eco-friendly biofertilizer for sustainable farming practices. Enhances soil fertility naturally.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$35/bag</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2023 AgroConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
